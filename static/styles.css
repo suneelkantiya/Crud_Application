@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    padding: 0;
+    border: 1px solid #000000;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 8px;
+}
+
+
+.btn-block {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+}
+.table thead th,
+.table tbody td {
+    border-right: 1px solid #ddd;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.table td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.btn-secondary-custom {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-secondary-custom:hover {
+    background-color: #5a6268;
+    color: #ffffff;
+}

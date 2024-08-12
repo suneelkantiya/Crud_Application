@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>CRUD Application</title>
+</head>
+<body>
+    <div class="container">
+        <h1> LAS CRUD Application for Employees</h1>
+        <a href="{{ url_for('add') }}" class="btn btn-custom mb-3">Add User</a>
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for employee in employees %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ employee.name }}</td>
+                        <td>{{ employee.email }}</td>
+                        <td>{{ employee.phone }}</td>
+                        <td>{{ employee.address }}</td>
+                        <td>
+                            <a href="{{ url_for('update', id=employee.id) }}" class="btn btn-custom btn-sm">Update</a>
+                            <button type="button" class="btn btn-secondary-custom btn-sm" onclick="confirmDelete({{ employee.id }});">Delete</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
